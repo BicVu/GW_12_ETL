@@ -7,7 +7,7 @@ Data was pulled from three separate sources, Kaggle, US Census Bureau and USDA. 
 TRANSFORMATION
 A lengthy process of cleaning, checking and formatting was required to transform the three files into data that could cross-reference each other.
 Utilizing Jupyter Notebook and panda libraries, the rows and columns had to be filtered for matching information. 
------
+
 Starting with the Obesity data which was a survey spreadsheet, relevant questions and their ID needed to be identified and used as a filter. There was far more data than necessary for this study, so only relevant columns of information where kept. Upon cross referencing the data, I noticed that only three years (2013, 2015, and 2017) had corresponding data. The year was used as a groupby mechanism for smaller datasets that can be easily compared. The state was identified as the primary key for all three data chart and needed to be sorted alphabetically. 
 
 The Census and School Lunches data were similarly filtered for states and quantity. The quantity of lunches were compared with state population for a very rough estimate of percentages of population in each state that received school lunches. The percentages were rounded to a corresponding decimal value as those in the Obesity Data.
